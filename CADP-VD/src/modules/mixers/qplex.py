@@ -83,6 +83,7 @@ class Qatten_Weight(nn.Module):
         self.n_head = args.n_head  # attention head num
 
         self.embed_dim = args.mixing_embed_dim
+        # print("Embedding dim: ", self.embed_dim)
         self.attend_reg_coef = args.attend_reg_coef
 
         self.key_extractors = nn.ModuleList()
@@ -109,6 +110,7 @@ class Qatten_Weight(nn.Module):
                                nn.Linear(self.embed_dim, 1))
 
     def forward(self, agent_qs, states, actions):
+        # print("States shape: ", states.shape)
         states = states.reshape(-1, self.state_dim)
         unit_states = states[:, : self.unit_dim * self.n_agents]  # get agent own features from state
         unit_states = unit_states.reshape(-1, self.n_agents, self.unit_dim)

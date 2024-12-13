@@ -2,14 +2,14 @@
 action_selector: "epsilon_greedy"
 epsilon_start: 1.0
 epsilon_finish: 0.05
-epsilon_anneal_time: 100000 # 500000 for corridor and 3s5z_vs_3s6z
+epsilon_anneal_time: 500000 # 500000 for corridor and 3s5z_vs_3s6z
 
-#runner: "parallel"
-runner: "episode"
-#batch_size_run: 8
+runner: "parallel"
+# runner: "episode"
+batch_size_run: 8
 buffer_size: 5000
 #batch_size_run: 2
-t_max: 1050000
+t_max: 4050000
 breakpoint: 700000
 
 # update the target network every {} episodes
@@ -27,10 +27,23 @@ mixer: "qmix"
 mixing_embed_dim: 32
 hypernet_embed: 64
 alpha: 0.5
+td_lambda: 0.3 # 0.3 for 6h_vs_8z
+lr: 0.001 # Learning rate for agents
+
 optimizer: 'adam'
 # grad_norm_clip: 10.0
 # use_onehot_loss: True
+# rnn layer normalization
+use_layer_norm: False
+
+# orthogonal init for DNN
+use_orthogonal: False
+gain: 0.01
+
+# Priority experience replay
+use_per: False
+per_alpha: 0.6
+per_beta: 0.4
+return_priority: False
 #evaluate: True
-td_lambda: 0.3 # 0.3 for 6h_vs_8z
-lr: 0.001 # Learning rate for agents
 name: "qmix_cadp"

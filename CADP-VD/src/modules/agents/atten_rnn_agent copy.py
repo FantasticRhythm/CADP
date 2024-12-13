@@ -9,7 +9,6 @@ class ATTRNNAgent(nn.Module):
     def __init__(self, input_shape, args):
         super(ATTRNNAgent, self).__init__()
         self.args = args
-       
         self.use_q_v = False
         self.fc1 = nn.Linear(input_shape, args.rnn_hidden_dim)
         self.rnn = nn.GRUCell(args.rnn_hidden_dim, args.rnn_hidden_dim)
