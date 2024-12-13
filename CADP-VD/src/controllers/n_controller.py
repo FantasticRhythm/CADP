@@ -22,6 +22,6 @@ class NMAC(BasicMAC):
             
         agent_inputs = self._build_inputs(ep_batch, t)
         avail_actions = ep_batch["avail_actions"][:, t]
-        agent_outs, agent_inter, self.hidden_states = self.agent(agent_inputs, self.hidden_states)
+        agent_outs, agent_inter, self.hidden_states,self.q_self = self.agent(agent_inputs, self.hidden_states)
         self.inter = agent_inter
         return agent_outs
