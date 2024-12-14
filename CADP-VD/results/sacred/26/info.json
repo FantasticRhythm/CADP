@@ -1,0 +1,132 @@
+{
+  "battle_won_mean": [
+    0.0
+  ],
+  "battle_won_mean_T": [
+    192
+  ],
+  "dead_allies_mean": [
+    6.0
+  ],
+  "dead_allies_mean_T": [
+    192
+  ],
+  "dead_enemies_mean": [
+    0.0
+  ],
+  "dead_enemies_mean_T": [
+    192
+  ],
+  "ep_length_mean": [
+    24.0
+  ],
+  "ep_length_mean_T": [
+    192
+  ],
+  "epsilon": [
+    1.0
+  ],
+  "epsilon_T": [
+    192
+  ],
+  "return_mean": [
+    {
+      "dtype": "float64",
+      "py/object": "numpy.float64",
+      "value": 5.391891891891891
+    }
+  ],
+  "return_mean_T": [
+    192
+  ],
+  "return_std": [
+    {
+      "dtype": "float64",
+      "py/object": "numpy.float64",
+      "value": 0.5075219448165925
+    }
+  ],
+  "return_std_T": [
+    192
+  ],
+  "test_battle_won_mean": [
+    0.0
+  ],
+  "test_battle_won_mean_T": [
+    192
+  ],
+  "test_dead_allies_mean": [
+    6.0
+  ],
+  "test_dead_allies_mean_T": [
+    192
+  ],
+  "test_dead_enemies_mean": [
+    2.0
+  ],
+  "test_dead_enemies_mean_T": [
+    192
+  ],
+  "test_ep_length_mean": [
+    29.125
+  ],
+  "test_ep_length_mean_T": [
+    192
+  ],
+  "test_return_mean": [
+    {
+      "dtype": "float64",
+      "py/object": "numpy.float64",
+      "value": 4.324324324324325
+    }
+  ],
+  "test_return_mean_T": [
+    192
+  ],
+  "test_return_std": [
+    {
+      "dtype": "float64",
+      "py/object": "numpy.float64",
+      "value": 4.710277376051325e-16
+    }
+  ],
+  "test_return_std_T": [
+    192
+  ],
+  "train/grad_norm": [
+    1.1540111303329468
+  ],
+  "train/grad_norm_T": [
+    2992
+  ],
+  "train/hit_prob": [
+    0.3596813976764679
+  ],
+  "train/hit_prob_T": [
+    2992
+  ],
+  "train/loss": [
+    0.10272014886140823
+  ],
+  "train/loss_T": [
+    2992
+  ],
+  "train/q_taken_mean": [
+    0.03761532217423546
+  ],
+  "train/q_taken_mean_T": [
+    2992
+  ],
+  "train/target_mean": [
+    0.0771482607047613
+  ],
+  "train/target_mean_T": [
+    2992
+  ],
+  "train/td_error_abs": [
+    0.2523561365464154
+  ],
+  "train/td_error_abs_T": [
+    2992
+  ]
+}
